@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; /* Sfondo scuro di base */
+    color: white;
+    background: #222 url('https://www.transparenttextures.com/patterns/dark-matter.png');
+}
+
+/* Header con sfondo scuro/materico */
+.hero {
+    height: 300px;
+    background: #222 url('https://www.transparenttextures.com/patterns/dark-matter.png'); /* Effetto texture */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.hero .subtitle {
+    letter-spacing: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Sezione About Me */
+.about-section {
+    background-color: #4a4a4a; /* Grigio medio come nello screenshot */
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 180px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Navigazione / Bottoni */
+.nav-container {
+    background-color: #222;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    min-width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+}
+
+/* Responsività per cellulari */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+.page-black {
+    background-color: #4a4a4a;
+}
+
+.section-header {
+    background: #222 url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.section-header h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+/* Layout a righe per i progetti */
+.content-grid {
+    padding: 50px 0;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.project-info {
+    flex: 2;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.hours {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.project-img {
+    flex: 1;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 40px 0;
+}
+
+/* Evidenzia bottone attivo */
+.nav-btn.active {
+    border-color: white;
+    background-color: #222;
+}
+
+.footer-nav {
+    background: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    background-color: #222;
+}
